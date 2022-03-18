@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.Topbar {
+  width: 100%;
+  height: 65px;
+  background-color: #1597e5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-left: 1px solid #3da9e9;
+}
+.topbarWrapper {
+  height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 200px;
+}
+.topbarIconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+.topIconBadge {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: -5px;
+  right: 0px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+.topRight {
+  display: flex;
+  align-items: center;
+}
+.avatar_admin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 2px 2px 2px rgb(98, 98, 102);
+}
+
+.menu {
+  position: absolute;
+  top: 120px;
+  right: 20px;
+  padding: 10px 20px;
+  width: 220px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 0px 11px -5px rgb(0 0 0 / 25%);
+  visibility: hidden;
+  opacity: 0;
+}
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+  top: 80px;
+}
+
+.menu::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: -3px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255);
+  transform: rotate(45deg);
+}
+
+.menu h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  line-height: 1.5em;
+}
+
+.menu h3 span {
+  font-size: 14px;
+  color: #898989ce;
+  font-weight: 400;
+}
+
+.menu ul li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu ul li div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.menu ul li div:hover .icon_avatar {
+  color: #5db9ef;
+  opacity: 1;
+}
+.text_dropdown_menu {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.menu ul li div:hover .text_dropdown_menu {
+  opacity: 1;
+  color: #5db9ef;
+}
+.icon_avatar {
+  max-width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  opacity: 0.8;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+.search_dashboard {
+  display: flex;
+  align-items: center;
+}
+.input_dashboard {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(98, 98, 102);
+}
+
+.searchDasboard_icon {
+  position: relative;
+  cursor: pointer;
+  margin-left: -33px;
+  width: 25px !important;
+  height: 25px !important;
+}
+.Topbar_input {
+  width: 500px;
+  font-size: 16px;
+  font-family: IBM Plex Sans, sans-serif;
+  font-weight: 400;
+  line-height: 1.4375em;
+  background: rgb(243, 246, 249);
+  border: 1px solid #e5e8ec;
+  border-radius: 10px;
+  padding: 6px 10px;
+  color: #20262d;
+  transition: width 300ms ease;
+}
+
+.Topbar_input:hover {
+  background: #eaeef3;
+  border-color: #e5e8ec;
+}
+.Topbar_input:focus {
+  outline: none;
+  width: 550px;
+  transition: width 200ms ease-out;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .search_dashboard {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 739px) {
+  .search_dashboard {
+    margin-left: 20px;
+  }
+  .Topbar_input {
+    width: 50px;
+  }
+  .Topbar_input:focus {
+    outline: none;
+    width: 150px;
+    transition: width 200ms ease-out;
+  }
+}

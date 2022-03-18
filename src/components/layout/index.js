@@ -1,0 +1,36 @@
+// Keep Layout things in a single place and easy to import
+
+// Barrel Model
+export * from './News'
+export * from './Slider'
+export * from './Footer'
+export * from './Activity'
+export * from './Header'
+export * from './GeneralInfo'
+export * from './YouthUnionInfo'
+export * from './BaseInfo'
+export * from './ModalDetailBaseInfo'
+export * from './ClubInfo'
+export * from './Login'
+export * from './GeneralAnnoucement'
+export * from './GlobalLoading'
+export * from './NewsItems'
+export * from './CreateNews'
+export * from './NotFound'
+export * from './CreateActivity'
+export * from './GeneralActivity'
+export * from './ActivityDetail'
+export * from './InformationUser'
+export * from './StudentAcitvity'
+export * from './Admin/ListNews'
+export * from './ManageRequestNews'
+export * from './EditNewsForUnion'
+export * from './Admin/ListAcitivity'
+export * from './Admin/EditActivity'
+export * from './Admin/ListUsers'
+export * from './Admin/EditInforAdmin'
+export * from './Admin/AddUserAdmin'
+export * from './Admin/ChangePasswordAdmin'
+
+
+

@@ -1,0 +1,265 @@
+/* Css mới */
+.login {
+  display: flex;
+  height: 100vh;
+  background-image: url(../../../assets/backgoundlogin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.login_container {
+  height: 100%;
+  display: flex;
+}
+
+.login_picture_content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login_picture--item {
+  position: absolute;
+  right: 0;
+  width: 53%;
+  border: 3px white solid;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.test {
+  position: absolute;
+  width: 50%;
+}
+
+.login_picture_space {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.login-title {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #3cb0f3;
+  letter-spacing: 1px;
+}
+.formLogin {
+  width: 100%;
+}
+.user {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 15%;
+  border-radius: 5px;
+  border: solid 2px #3cb0f3;
+}
+.inputUser {
+  margin-left: 12px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.icon-login {
+  margin-left: 10px;
+  color: #3cb0f3;
+}
+.shape {
+  border-left: solid 2px #3cb0f3;
+  margin-left: 10px;
+  height: 70%;
+}
+.pass {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 15%;
+  border-radius: 5px;
+  border: solid 2px #3cb0f3;
+}
+.container_err_noti_login{
+  position: relative;
+  width: 80%;
+}
+.inputPass {
+  margin-left: 12px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.spaceCheck {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+}
+.checkbox-remember {
+  color: #3cb0f3;
+}
+.checkRemember {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  color: #3cb0f3;
+  font-size: 20px;
+}
+.checkForgot {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  color: #3cb0f3;
+  font-size: 20px;
+}
+.login-space {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-login {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: solid #3cb0f3;
+  border-radius: 5px;
+  margin: 10px 5px;
+  min-width: 180px;
+  justify-content: center;
+  user-select: none;
+  color: #3cb0f3;
+  font-weight: bold;
+}
+.btn-login-icon {
+  margin-right: 5px;
+}
+.login-space-google {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 15%;
+}
+.btn-login-google {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: red;
+  border-radius: 5px;
+  margin: 10px 5px;
+  width: 80%;
+  justify-content: center;
+  user-select: none;
+  color: #ffffff;
+}
+.icon-google {
+  height: 20px;
+  margin: 4px 10px;
+}
+.text-final {
+  margin: -35px 0 10px;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+.err_noti_login{
+  position: relative;
+  color: red;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .login_picture--item {
+    width: 58%;
+    height: auto;
+  }
+  .login_picture_content {
+    margin: auto;
+  }
+  .login_picture_space {
+    width: 46%;
+    height: 320px;
+  }
+  .icon {
+    display: none !important;
+  }
+  .shape {
+    display: none;
+  }
+  .spaceCheck {
+    width: 88%;
+  }
+  .checkRemember {
+    font-size: 17px;
+  }
+  .checkForgot {
+    font-size: 17px;
+  }
+  .btn-login {
+    margin: 0px 5px;
+    height: 36px;
+  }
+  .login-space-google {
+    width: 90%;
+  }
+  .btn-login-google {
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+/* Moblie */
+@media (max-width: 739px) {
+  .login_picture--item {
+    display: none;
+  }
+  .login_picture_content {
+    margin: auto 10px;
+  }
+  .login_picture_space {
+    width: 100%;
+  }
+  .icon {
+    display: none !important;
+  }
+  .shape {
+    display: none;
+  }
+  .checkRemember {
+    font-size: 17px;
+  }
+  .checkForgot {
+    font-size: 17px;
+  }
+  .checkRemember {
+    font-size: 17px;
+  }
+  .checkForgot {
+    font-size: 17px;
+  }
+  .inputUser {
+    font-size: 18px;
+  }
+  .inputPass {
+    font-size: 18px;
+  }
+}

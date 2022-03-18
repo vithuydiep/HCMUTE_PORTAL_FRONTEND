@@ -1,0 +1,126 @@
+.generalActivity {
+  margin-top: 10px;
+}
+
+.generalActivity_content-title {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.generalActivity_slider {
+  width: 100%;
+  overflow: hidden;
+}
+.generalActivity_slider-text {
+  color: red;
+  font-weight: 600;
+  animation: slide-left infinite 30s;
+}
+.generalActivity_content {
+  margin-top: 10px;
+}
+
+.generalAnnouncement_pagination {
+  margin: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.generalAnnouncement_content_item {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--main-color);
+  padding-bottom: 7px;
+}
+.generalAnnouncement_content_item_pic {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.generalAnnouncement_content_item_pic-space {
+  width: 100%;
+}
+.generalAnnouncement_content_item_pic_content {
+  flex: 1;
+  margin-left: 10px;
+  text-align: justify;
+}
+.generalAnnouncement_content_item_pic_content--title {
+  color: var(--main-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.generalAnnouncement_content_item_pic_content--des {
+  color: var(--text-color);
+  font-weight: 300;
+  margin-top: 3px;
+  height: 76px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.generalAnnouncement_content_item_pic_content--date {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 3px;
+}
+.generalActivity_button_space {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn-deteil {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  width: 60%;
+  justify-content: center;
+  user-select: none;
+  text-decoration: none;
+}
+.btn-activity {
+  margin: 4px;
+  width: 60%;
+  height: 26px;
+  cursor: pointer;
+}
+
+[class~='generalAnnouncement_content_item']:last-of-type {
+  border: none;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: -35%;
+    width: 100%;
+  }
+}
+@media (max-width: 739px) {
+  .generalActivity {
+    margin: 10px 5px;
+  }
+  .generalAnnouncement_content_item {
+    flex-direction: column;
+  }
+  .generalAnnouncement_content_item_pic {
+    width: 100%;
+  }
+  .generalAnnouncement_content_item_pic_content {
+    margin-left: 0;
+  }
+}

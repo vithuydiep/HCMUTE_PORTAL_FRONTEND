@@ -1,0 +1,124 @@
+.modal_baseinfo {
+  width: 100%;
+}
+
+.modal_container_base {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: white;
+  box-shadow: 24;
+  padding: 32px;
+  border-radius: 10px;
+}
+.modal_container_base_close_btn {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  color: var(--main-color) !important;
+}
+
+.modal_baseinfo--text {
+  width: 80%;
+  margin: auto;
+  border: 2px var(--main-color) solid;
+  border-radius: 5px;
+  box-shadow: 4px 4px 3px 0px #ccc;
+  padding: 10px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.modal_baseinfo-content {
+  margin-top: 20px;
+}
+
+.modal_baseinfo-content_label {
+  min-height: 51px;
+  display: flex;
+  color: var(--text-color);
+  align-items: center;
+  border: 1px var(--main-color) solid;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.modal_baseinfo-content_item {
+  margin: 15px 0;
+  border-radius: 5px;
+  min-height: 145px;
+  box-shadow: 3px 3px 11px 0px #ccc;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+.modal_baseinfo-content_label-icon {
+  width: 30px;
+  margin-right: 5px;
+}
+.modal_baseinfo-content_item_avatar {
+  width: 20%;
+}
+.modal_baseinfo-content_item_avatar_space {
+  width: 100%;
+}
+.modal_baseinfo-content_item_info {
+  margin-left: 10px;
+  flex: 1;
+}
+.modal_baseinfo-content_item_info-name {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.modal_baseinfo-content_item_info-underline {
+  border-top: 1px #ccc solid;
+  margin: 3px 0;
+}
+.modal_baseinfo-content_item_info-text {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+.modal_baseinfo-content_item_info-contact {
+  display: flex;
+  margin-top: 5px;
+}
+.modal_baseinfo-content_item_info-contact-icon {
+  height: 30px;
+  margin-right: 2px;
+}
+.modal_baseinfo-content_item:hover {
+  background-color: #cccccc21;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .modal_container_base {
+    width: 80%;
+  }
+  .modal_baseinfo--text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 739px) {
+  .modal_container_base {
+    width: 100%;
+  }
+  .modal_container_base {
+    padding: 32px 5px 5px;
+  }
+  .modal_container_base_close_btn {
+    right: -15px;
+    top: 5px;
+  }
+}

@@ -1,0 +1,20 @@
+.create_slider_info_post {
+  padding: 0px 0px;
+}
+.create_slider_info_user {
+  padding: 20px 0;
+}
+.create_slider_container {
+  padding: 10px 50px;
+}
+.create_slider_preview_picture {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@media (max-width: 739px) {
+  .create_slider_container {
+    padding: 5px 10px;
+  }
+}

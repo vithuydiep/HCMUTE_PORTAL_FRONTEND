@@ -1,0 +1,83 @@
+.Activities {
+  margin-top: 10px;
+}
+
+.news_slider {
+  width: 100%;
+  overflow: hidden;
+}
+.news_slider-text {
+  color: red;
+  font-weight: 600;
+  animation: slide-left infinite 30s;
+}
+.Activity_content {
+  margin-top: 10px;
+}
+.Activity_content-title {
+  color: #08c;
+  font-weight: 500;
+  font-size: 26px;
+  margin: 10px 0;
+  text-align: justify;
+}
+.Activity_content-date {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.Activity_content_container {
+  margin-left: 10px;
+}
+.Activity_author {
+  font-style: italic;
+  text-align: right;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.activity_image_space {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.activity_image_show {
+  width: 90%;
+}
+.Activity_button_space {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.activity-btn-register {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  width: 60%;
+  justify-content: center;
+  user-select: none;
+  text-decoration: none;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: -35%;
+    width: 100%;
+  }
+}
+@media (max-width: 739px) {
+  .Activities {
+    margin: 10px 5px;
+  }
+}

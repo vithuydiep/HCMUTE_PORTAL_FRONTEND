@@ -1,0 +1,108 @@
+.youth_union {
+  margin: 20px 0;
+}
+
+.youth_union_title {
+  width: 100%;
+}
+
+.youth_union_title {
+  width: 80%;
+  margin: auto;
+  border: 2px var(--main-color) solid;
+  border-radius: 5px;
+  box-shadow: 4px 4px 3px 0px #ccc;
+}
+.youth_union_title--text {
+  padding: 10px;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.youth_union_title_content {
+  margin-top: 15px;
+}
+
+.youth_union_title_content_label {
+  min-height: 51px;
+  display: flex;
+  color: var(--text-color);
+  align-items: center;
+  border: 1px var(--main-color) solid;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.youth_union_title_content_item {
+  align-items: center;
+  margin: 15px 0;
+  border-radius: 5px;
+  min-height: 168px;
+  box-shadow: 3px 3px 11px 0px #ccc;
+  padding: 15px;
+  display: flex;
+}
+.youth_union_title_content_label-icon {
+  width: 30px;
+  margin-right: 5px;
+}
+.youth_union_title_content_item_avatar {
+  width: 20%;
+}
+.youth_union_title_content_item_avatar_space {
+  object-fit: contain;
+  height: 120px;
+  width: 100%;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+}
+.youth_union_title_content_item_info {
+  margin-left: 10px;
+  flex: 1;
+}
+.youth_union_title_content_item_info-name {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.youth_union_title_content_item_info-underline {
+  border-top: 1px #ccc solid;
+  margin: 3px 0;
+}
+.youth_union_title_content_item_info-text {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+.youth_union_title_content_item_info-contact {
+  display: flex;
+  margin-top: 5px;
+}
+.youth_union_title_content_item_info-contact-icon {
+  height: 30px;
+  margin-right: 2px;
+}
+.youth_union_title_content_item:hover {
+  background-color: #cccccc21;
+}
+
+@media (max-width: 739px) {
+  .youth_union {
+    margin: 20px 5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .youth_union_title_content_item_avatar_space {
+    height: 65px;
+  }
+  .youth_union_title_content_item_avatar {
+    align-self: start;
+  }
+}

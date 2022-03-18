@@ -1,0 +1,44 @@
+.editor_link,
+.editor_embedded,
+.rdw-option-wrapper {
+  box-sizing: content-box !important;
+}
+.editor-class {
+  max-height: 600px !important;
+  min-height: 300px !important;
+  border: 1px solid #f1f1f1 !important;
+  padding: 5px !important;
+  border-radius: 2px !important;
+}
+.editor-class::-webkit-scrollbar {
+  width: 6px;
+}
+.editor-class::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.editor-class::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+.wrapper_editor {
+  margin-top: 10px;
+}
+
+.rdw-image-modal-upload-option-label {
+  overflow: hidden !important;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}

@@ -1,0 +1,125 @@
+.block-footer {
+  border-top-style: groove;
+  border-top-color: #ffffff;
+  border-top-width: thin;
+  background-color: hsl(0, 0%, 98%);
+  margin-top: 20px;
+}
+.footer-top {
+  display: flex;
+}
+.footer-bottom {
+  border-top-style: groove;
+  border-top-color: #ffffff;
+  background: #fbfbfb;
+  border-top-width: thin;
+}
+
+.space-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-final {
+  margin: 5px 0 10px;
+  font-size: 15px;
+  color: #7e889e;
+  text-align: center;
+}
+
+.space-left-down {
+  color: #7e889e;
+  font-size: 16px;
+}
+.space-left-down-text {
+  margin: 5px 0;
+}
+.space {
+  margin: 20px;
+}
+
+.logo {
+  width: 40%;
+  height: 50%;
+}
+.text-under-logo {
+  color: #31708f;
+  font: Roboto;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.text-right-up {
+  color: #7e889e;
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.text-right-down {
+  color: #7e889e;
+  font-weight: 500;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+}
+.tool-right-down {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.btn_contact {
+  width: 20%;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.tool-right-up {
+  color: #7e889e;
+  font: Robotor;
+}
+
+.space_contact_btn {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.logo_fb {
+  width: 35px;
+  margin-right: 10px;
+}
+.logo_email {
+  width: 35px;
+}
+.logo-mobile {
+  width: 60%;
+  height: 70%;
+  display: flex;
+}
+.text_or {
+  margin-right: 10px;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .btn_contact {
+    width: 35%;
+  }
+  .text-final {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  .btn_contact {
+    width: 35%;
+  }
+  .text-final {
+    display: none;
+  }
+}

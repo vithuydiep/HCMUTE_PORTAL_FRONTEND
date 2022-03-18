@@ -1,0 +1,159 @@
+.studentActivity {
+  margin-top: 10px;
+}
+
+.studentActivity_content-title {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 18px;
+}
+.studentActivity_slider {
+  width: 100%;
+  overflow: hidden;
+}
+.studentActivity_slider-text {
+  color: red;
+  font-weight: 600;
+  animation: slide-left infinite 30s;
+}
+.studentActivity_content {
+  margin-top: 10px;
+}
+
+.studentAnnouncement_pagination {
+  margin: 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.studentAnnouncement_content_item {
+  display: flex;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--main-color);
+  padding-bottom: 7px;
+}
+.studentAnnouncement_content_item_pic {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.studentAnnouncement_content_item_pic-space {
+  width: 100%;
+}
+.studentAnnouncement_content_item_pic_content {
+  flex: 1;
+  margin-left: 10px;
+  text-align: justify;
+}
+.studentAnnouncement_content_item_pic_content--title {
+  color: var(--main-color);
+  font-weight: 600;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.studentAnnouncement_content_item_pic_content--des {
+  color: var(--text-color);
+  font-weight: 300;
+  margin-top: 5px;
+  height: 76px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.studentAnnouncement_content_item_pic_content--date {
+  /* display: flex; */
+  /* align-items: center; */
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 3px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.studentActivity_button_space {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.btn-deteil {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  width: 60%;
+  justify-content: center;
+  user-select: none;
+  text-decoration: none;
+}
+.btn-activity {
+  margin: 4px;
+  width: 60%;
+  height: 26px;
+  cursor: pointer;
+}
+.studentAnnouncement_progress-space {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 90% 4%;
+  align-items: center;
+}
+.studentAnnouncement_progress {
+  height: 15px !important;
+  border-radius: 10px;
+}
+.studentActivity_progress-text {
+  margin-left: 3px;
+  font-size: 16px;
+}
+.studentActivity_fillter {
+  display: grid;
+  grid-template-columns: 20% 20% 10%;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.studentActivity_date-picker {
+  width: 90% !important;
+}
+
+[class~='studentAnnouncement_content_item']:last-of-type {
+  border: none;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: -35%;
+    width: 100%;
+  }
+}
+@media (max-width: 739px) {
+  .studentActivity {
+    margin: 10px 5px;
+  }
+  .studentAnnouncement_content_item {
+    flex-direction: column;
+  }
+  .studentAnnouncement_content_item_pic {
+    width: 100%;
+  }
+  .studentAnnouncement_content_item_pic_content {
+    margin-left: 0;
+  }
+}

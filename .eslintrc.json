@@ -1,0 +1,61 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier", "eslint:recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    // Prettier do this
+    "implicit-arrow-linebreak": "off",
+    "comma-dangle": "off",
+    "indent": "off",
+    "no-trailing-spaces": "off",
+    // Allow jsx syntax inside .js files for Tests
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", "jsx"]
+      }
+    ],
+    // Allow import packages from Dev Dependencies in Tests files
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.spec.js",
+          "**/setupTests.js",
+          "**/utils/tests/*.js"
+        ]
+      }
+    ],
+    "react/forbid-prop-types" : 0,
+    "react-hooks/exhaustive-deps" :"off",
+    "no-param-reassign": 0,
+    "no-underscore-dangle" :0,
+    "react/jsx-one-expression-per-line" : 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions":0
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  }
+}

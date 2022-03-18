@@ -1,0 +1,46 @@
+.admin_list_container {
+  /* margin: 60px 0; */
+  box-shadow: 1px 2px 6px #ccc;
+}
+
+.admin_list_users {
+  display: flex;
+  /* background-color: aqua; */
+  /* height: 100%; */
+  align-items: center;
+  padding: 20px 0;
+}
+.list_users_admin_btn_delete {
+  color: #eb3838 !important;
+}
+
+.userListImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.activityitem_btn-register_admin {
+  position: absolute;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  justify-content: center;
+  -webkit-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  width: 80px;
+  height: 30px;
+  right: 250px;
+  top: 100px;
+  cursor: pointer;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .activityitem_btn-register_admin {
+    font-size: 13px;
+  }
+}

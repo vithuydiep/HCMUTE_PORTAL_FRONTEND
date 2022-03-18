@@ -1,0 +1,19 @@
+.admin_list_container {
+  box-shadow: 1px 2px 6px #ccc;
+  border-radius: 10px;
+}
+
+.admin_list_news {
+  display: flex;
+  /* background-color: aqua; */
+  /* height: 100%; */
+  align-items: center;
+  padding: 20px 0;
+}
+.list_news_admin_btn_delete {
+  color: #eb3838 !important;
+}
+.gJVjWL {
+  background-color: transparent !important;
+  padding-left: 20px !important;
+}

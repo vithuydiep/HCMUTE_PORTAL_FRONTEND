@@ -1,0 +1,41 @@
+.activity {
+  margin: 32px 10px;
+}
+.activity_label_text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.activity_label_underline {
+  border-top: var(--main-color) solid;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+}
+.content {
+  margin-top: 20px;
+  position: relative;
+}
+
+.btn-seemore-acc {
+  position: absolute;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  border: solid 1px var(--main-color);
+  border-radius: 3px;
+  font-weight: 500;
+  box-shadow: inset 0 0 0 0 var(--main-color);
+  transition: ease-out 0.1s;
+  right: 10px;
+  bottom: -25px;
+}
+.btn-seemore-acc:hover {
+  box-shadow: inset 100px 0 0 0 var(--main-color);
+  color: white;
+}
